@@ -1,0 +1,25 @@
+.h1{
+  color: blue;
+}
+.h4{
+  color: white;
+}
+
+.my-div{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 0 auto;
+  display: block;
+
+}
+
+.header{
+  height:200px;
+  width: :auto;
+  background-color: pink;
+  border: 1px solid: #000;
+  text-align: center;
+}
