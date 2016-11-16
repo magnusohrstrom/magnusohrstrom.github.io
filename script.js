@@ -199,5 +199,5 @@ function doneMove() {
 }
 //funktion som tar bort li elementet från todo.
 function close(){
-  this.parentNode.parentNode.removeChild(this.parentNode);
+  this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
 }
