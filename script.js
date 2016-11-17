@@ -61,12 +61,13 @@ function generateRandomCourse() {
   else if(checkBoxValue === true){
       var loop = true;
       while(loop){
-      var j = Math.floor(Math.random() * arrCourses.length);
-      if(arrCourses[j].isVeggie){
-        a.innerHTML = arrCourses[j].str;
-        a.href = arrCourses[j].url;
+      var i = Math.floor(Math.random() * arrCourses.length);
+      if(arrCourses[i].isVeggie){
+        a.innerHTML = arrCourses[i].str;
+        a.href = arrCourses[i].url;
+        loop=false;
       }
-      loop=false;
+
     }
   }
 }
