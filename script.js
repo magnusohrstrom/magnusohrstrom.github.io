@@ -46,6 +46,16 @@ var button = document.getElementById('button');
 
 button.addEventListener("click", generateRandomCourse);
 
+var styleButton1 = document.getElementById('style1');
+styleButton1.addEventListener('click', setStyle1);
+
+var styleButton2 = document.getElementById('style2');
+styleButton2.addEventListener('click', setStyle2);
+var styleButton3 = document.getElementById('style3');
+styleButton3.addEventListener('click', setStyle3);
+
+
+
 
 //Function for button to gererate a course-log.
 function generateRandomCourse() {
@@ -61,13 +71,40 @@ function generateRandomCourse() {
   else if(checkBoxValue === true){
       var loop = true;
       while(loop){
-      var i = Math.floor(Math.random() * arrCourses.length);
-      if(arrCourses[i].isVeggie){
-        a.innerHTML = arrCourses[i].str;
-        a.href = arrCourses[i].url;
+      var j = Math.floor(Math.random() * arrCourses.length);
+      if(arrCourses[j].isVeggie){
+        a.innerHTML = arrCourses[j].str;
+        a.href = arrCourses[j].url;
         loop=false;
       }
 
     }
   }
+}
+//Function that sets style.
+function setStyle1(){
+  document.getElementById('header').style.backgroundColor="";
+  document.getElementById('button').style.background="";
+  document.getElementById('header').style.color="";
+  document.getElementById('mainDiv').style.backgroundColor="";
+  document.getElementById('mainDiv').style.color="";
+  document.getElementById('courseP').style.color="";
+
+}
+function setStyle2(){
+  document.getElementById('header').style.backgroundColor="#ecf0f1";
+  document.getElementById('button').style.background="linear-gradient(#5989A8,#2c3e50)";
+  document.getElementById('header').style.color="#2c3e50";
+  document.getElementById('mainDiv').style.backgroundColor="#e74c3c";
+  document.getElementById('mainDiv').style.color="white";
+  document.getElementById('courseP').style.color="white";
+
+}
+function setStyle3(){
+  document.getElementById('header').style.backgroundColor="#FBD38D";
+  document.getElementById('button').style.background="linear-gradient(#FF6363,#c0392b)";
+  document.getElementById('header').style.color="#2c3e50";
+  document.getElementById('mainDiv').style.backgroundColor="#2c3e50";
+  document.getElementById('mainDiv').style.color="#FBD38D";
+  document.getElementById('courseP').style.color="#FBD38D";
 }
