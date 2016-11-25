@@ -34,53 +34,130 @@ a{
   float:left;
   font-family: Futura;
   margin-top: 3%;
-  opacity: 1;
-  -webkit-animation: fadein 3s;
-     -moz-animation: fadein 3s;
-      -ms-animation: fadein 3s;
-       -o-animation: fadein 3s;
-          animation: fadein 3s;
+
+  animation-delay: 5s;
+  -moz-animation-delay:5s:
+  -webkit-animation-delay:5s;
+  -webkit-animation: fadein 5s;
+     -moz-animation: fadein 5s;
+      -ms-animation: fadein 5s;
+       -o-animation: fadein 5s;
+          animation: fadein 5s;
 
 
 }
 
 @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
 }
-
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 0.9; }
+}
+@-moz-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 0.9; }
+}
 #mainDiv{
   display: flex;
   justify-content: flex-start;
 
-  height: 500px;
+  height: 200px;
   width:100%;
   align-self: center;
   margin-top: 20%;
 
 }
+#icebucket{
+
+  width:100%;
+  height:400px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ice{
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  margin-top:20%;
+  margin-right: 20px;
+  border-bottom: 60px solid #FFFFFF;
+  opacity:0.9;
+  -webkit-animation: fadein 5s;
+     -moz-animation: fadein 5s;
+      -ms-animation: fadein 5s;
+       -o-animation: fadein 5s;
+          animation: fadein 5s;
+}
+.ice:only-child{
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid #3ACCCC;
+  margin-right: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.9;
+
+}
+#berg1{
+  margin-top: 25%;
+  margin-right:10%;
+
+  padding-left:10px;
+
+}
+#berg2{
+  margin-left:70%;
+  margin-top:45%;
+  margin-bottom: 25%;
+  padding-left:10px;
+}
+#berg3{
+  margin-top: 40%;
+  margin-bottom: 25%;
+  padding-left:10px;
+}
+
+
 .dropdownA{
   display:flex;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
-  height:20%;
-  width:40%;
+  height:50%;
+  width:60%;
   background:#D90368;
-  opacity:0.8;
+
+}
+.dropdownA:hover{
+  background:#004475;
 }
 footer{
   bottom:0px;
   background: #3ACCCC;
-  opacity: 0.8;
-  height:7%;
+  height:5%;
   width:100%;
-  -webkit-animation: fadein 6s;
-     -moz-animation: fadein 6s;
-      -ms-animation: fadein 6s;
-       -o-animation: fadein 6s;
-          animation: fadein 6s;
+  opacity:0.9;
+  -webkit-animation: fadein 5s;
+     -moz-animation: fadein 5s;
+      -ms-animation: fadein 5s;
+       -o-animation: fadein 5s;
+          animation: fadein 5s;
+
   position:absolute;
+
 }
 #divProjects{
   display:flex;
@@ -92,7 +169,7 @@ footer{
   font-size: 70%;
   height: 40%;
   width:100%;
-  opacity:0.8;
+  opacity: 0.9;
   -webkit-animation: fadein 2s;
      -moz-animation: fadein 2s;
       -ms-animation: fadein 2s;
@@ -101,7 +178,7 @@ footer{
 }
 
 #name{
-  flex:0.8;
+  flex:0.9;
   border-right: 2px solid white;
   display: flex;
   height: 100%;
@@ -118,19 +195,22 @@ flex-direction: row;
 justify-content: space-around;
 width: 75%;
 flex:1;
-opacity: 0.8;
+
 }
 .headerA:nth-child(1){
   background: #004475;
   margin-left: 10%;
-}.headerA:nth-child(1):active{background:white;}
+}
 
 .headerA:nth-child(2){
   background: #FF4766;
 
-}.headerA:nth-child(3){
+}
+
+.headerA:nth-child(3){
   background: #3ACCCC;
 }
+.headerA:active{background:lightgrey;}
 .headerA{
   display:flex;
   justify-content: center;
@@ -139,7 +219,7 @@ opacity: 0.8;
   height: 50px;
   width:20%;
   background: salmon;
-  opacity:0.8;
+  opacity:0.9;
 
 }
 
