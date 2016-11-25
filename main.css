@@ -98,6 +98,9 @@ a{
        -o-animation: fadein 5s;
           animation: fadein 5s;
 }
+.ice:hover{
+  cursor:pointer;
+}
 .ice:only-child{
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
