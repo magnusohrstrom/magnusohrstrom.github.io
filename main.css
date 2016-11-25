@@ -32,7 +32,7 @@ a{
   height:200px;
   width:100%;
   float:left;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: Futura;
   margin-top: 3%;
   opacity: 1;
   -webkit-animation: fadein 3s;
@@ -109,7 +109,7 @@ footer{
   justify-content: center;
   align-items: center;
   width: 20%;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Futura;
 
 }
 #menu{
