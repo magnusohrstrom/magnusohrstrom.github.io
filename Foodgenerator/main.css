@@ -56,8 +56,8 @@ body{
   align-items: center;
 
   width: 100%;
-  background: white;
-  color:#15588A;
+  background: #B3B9F0;
+  color:#000080;
   padding-top: 2%;
   height:40%;
 
@@ -101,7 +101,7 @@ body{
 }
 #courseP{
   font-size: 36px;
-  color:#15588A;
+  color:#000080;
   text-decoration: none;
 }
 #courseP:hover{
