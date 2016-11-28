@@ -27,9 +27,24 @@ function showProjects(){
   a3.innerHTML = "In progress..";
   a3.setAttribute('class','dropdownA');
   divProjects.appendChild(a3);
-  
-}
 
+}
+//function that creates contact image element and contact info when clicked.
+var divContact= document.getElementById('contact');
+divContact.addEventListener('click',showContact);
+
+function showContact(){
+  var frame = document.createElement('span');
+  frame.setAttribute('id','frame');
+
+  mainDiv.appendChild(frame);
+  var image=document.createElement('img');
+  image.setAttribute('src','bilder/IMG_1073.jpg');
+  image.setAttribute('id','profile');
+  frame.appendChild(image);
+
+
+}
 var nackademin = document.getElementById('divProjects');
 nackademin.addEventListener('click',showSchool);
 function showSchool(){
