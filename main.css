@@ -200,6 +200,16 @@ footer{
   width: 20%;
   font-family: Futura;
 
+
+}
+#name:hover{
+  background:white;
+  color:black;
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
 }
 #menu{
 display: flex;
