@@ -45,6 +45,7 @@ function showContact(){
 
 
 }
+/*
 var nackademin = document.getElementById('divProjects');
 nackademin.addEventListener('click',showSchool);
 function showSchool(){
@@ -69,4 +70,4 @@ function showSchool(){
   a3.setAttribute('class','dropdownA');
   divProjects.appendChild(a3);
 
-}
+}*/
