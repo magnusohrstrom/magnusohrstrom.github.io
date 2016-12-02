@@ -61,8 +61,8 @@ a{
 }
 #mainDiv{
   display: flex;
-  justify-content: center;
-
+  justify-content: flex-start;
+  flex-direction: row;
   height: 200px;
   width:100%;
   align-self: center;
@@ -138,12 +138,15 @@ a{
 
 
 .dropdownA{
+
   display:flex;
   justify-content: center;
   align-items: center;
+
+
   margin-top: 2%;
   height:50%;
-  width:60%;
+
   background:#D90368;
 
 }
@@ -172,7 +175,7 @@ footer{
 
 }
 #divProjects{
-  display:flex;
+  display:hidden;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;

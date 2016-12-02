@@ -1,0 +1,387 @@
+/* Project PLANTIFY
+In every css comment spcificitet is specified!
+
+
+*/
+
+
+/* reset  */
+
+/* general */
+/*0001*/
+body{
+  margin:0;
+  padding:0;
+  background: url('images/bakgrund@2x.jpg');
+  background-size: cover;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  width: 100%;
+}
+/*0001*/
+main{
+  /*fallback for browsers not suporting rgba*/
+
+  background: rgb(0,0,0);
+  background: rgba(80,92,90, 0.5);
+  margin:0;
+  display: block;
+  width:100%;
+  height: 2400px;
+  text-align: center;
+  top:0;
+  position: absolute;
+}
+
+/* typography ----------------------------------------------*/
+/*0001*/
+h1,h2,h3, a{
+  font-family:'Kaushan Script', cursive;
+  color:white;/*#B2E392*/
+  text-decoration: none;
+}
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 3rem;
+}
+/*0010*/
+.aside2{
+  color:#280003;
+  margin-left: 2rem;
+  margin-right:2rem;
+}
+/*0001*/
+h3.aside2{margin-top: 3rem;}
+p.aside2{margin-top: -1rem;}
+h2.aside{
+  color:#00D66E;
+  margin-left: 2rem;
+}
+/*0010*/
+.contacth2{
+  margin-bottom: 0;
+}
+/*0001*/
+h3{color: white;
+  font-size: 1.6rem;}
+/*0011*/
+h3.form{
+  font-size:1.3rem;
+  margin:0;
+}
+/*0001*/
+a{
+  font-size: 1.2rem;
+}
+
+/*0010*/
+.green{
+  font-size: 6rem;
+  color: #00D66E;
+}
+/*0001*/
+p,li{
+  font-size: 1.2rem;
+  color: white;
+  margin:0.5rem;
+  font-weight: 600;
+
+}
+/*0010*/
+.headline{
+
+  float:left;
+  margin-left:1rem;
+}
+
+.sectionheading{
+  height: 4rem;
+
+  background: transparent;
+
+  align-items: center;
+}
+.landingheading{
+  margin-top: 10rem;
+  background:transparent;
+
+}
+.heading,.heading2{
+  font-size: 3rem;
+  color:white;
+  margin-top: 6rem;
+ bottom:0;
+}
+.heading2{
+  font-size: 6rem;
+}
+
+/*0001*/
+ul{
+  color:white;
+
+}
+
+/*--------------------------Main content-----------------*/
+
+/* --------------------------header--------------------- */
+/*0001*/
+header{
+  background: #280003;
+  width:100%;
+  height: 4em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+}
+/*logo in header*/
+/*0010*/
+.logo{
+  margin-left: 6rem;
+  margin-right: 0;
+  height:3em;
+  width: 3em;
+
+}
+/*navigation menu*/
+/*0001*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:2em;
+  margin-left: 4rem;
+  margin-right: 6rem;
+  width:50%;
+}
+
+/*-----------center---------------------*/
+/*0001*/
+center{
+  position:absolut;
+  margin:6rem  6rem;
+  margin-top: 3rem;
+  width:auto;
+  min-width: 30rem;
+  padding:0;
+  height: 1200px;
+  background: transparent;
+  -webkit-animation: fadein 2s;
+   -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+     -o-animation: fadein 2s;
+        animation: fadein 2s;
+
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  background:white;
+  -box-sizing: border-box;
+  box-sizing: border-box;
+  min-height:22rem;
+  width:100%;
+}
+/*0010*/
+.banner{
+  border:1rem solid white;
+  background: url("images/landingpage2@2x.jpg");
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+.contact{
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.bottomsection{
+  background: #280003;
+  height:10rem;
+  min-height: 0;
+}
+/*0001*/
+article{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width:60%;
+  height: 35%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+/*article för about us*/
+/*0010*/
+.about{
+  display: block;
+  height:20rem;
+  width: 30rem;
+}
+/*0001 återanvänds*/
+aside{
+
+  text-align: left;
+  width:49%;
+  height: 30rem;
+  background: #280003;
+  float:left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-width: 20rem;
+
+}
+/*0010 återanvänds*/
+.asideright{
+background: white;
+float:right;
+margin-right: 0;
+}
+
+.asidecontact{
+  width:40%;
+  margin-top:10rem;
+
+}
+
+/*0001*/
+table{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-collapse: collapse;
+  height:100%;
+}
+td{
+  color:white;
+  background:#5A7D7C;
+  padding:1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/*0011*/
+th:nth-child(1){background:#B2E392;}
+th:nth-child(2){background:#17AE82;}
+th:nth-child(3){background:#00D66E;}
+/*0020*/
+.th2:nth-child(1){background: #EF2F59;}
+.th2:nth-child(2){background: #2470A6;}
+.th2:nth-child(3){background: #;}
+
+/*0011*/
+td:nth-child(1){background: #A1A3A3;}
+td:nth-child(2){background: #656666;}
+td:nth-child(3){background: #280003;}
+/*0011*/
+input[type="checkbox"]{
+  height:3rem;
+  width:3rem;
+
+}
+/*0010*/
+.check{
+
+  display: flex;
+  justify-content: center;
+}
+
+/*images--------------------------------------------------------------*/
+/*0001*/
+/*
+img{
+  display: block;
+  background: url("images/landingpage@2x.jpg");
+  max-width: 70rem;
+
+  width:100%;
+}
+*/
+
+
+
+
+
+/* footer */
+/*0001*/
+footer{
+  position: fixed;
+  background:white;
+  height: 3em;
+  bottom:0;
+  width:100%;
+}
+
+
+/* Contact form 0001*/
+/*0001*/
+form{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  height: 40rem;
+  width: 50%;
+  margin-top: 7rem;
+  min-width: 15rem;
+
+  background: transparent;
+}
+
+/*0011*/
+input[type="text"]{
+ width:100%;
+ height:2rem;
+ background: white;
+ margin:1rem;
+ margin-top: 0;
+}
+/*0010*/
+.mailtext{
+  width:100%;
+  height:150px;
+}
+/*0011*/
+input[type="submit"]{
+  width:10rem;
+  height: 2rem;
+  background: #00D66E;
+  border:0;
+  border-radius: 1rem;
+}
+/* Animations */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+a:hover,.headline:hover{color: #00D66E;}
+aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
+  cursor:pointer;
+  }
+
+/* SHAME, SHAME, SHAME, SHAME, SHAME, the psycho nun fom GoT lvl SHAME)*/
+/*0010*/
+.aboutdiv{
+  text-align: left;
+  height:auto;
+  width: auto;
+  margin-top:1rem;
+  padding:1rem;
+}

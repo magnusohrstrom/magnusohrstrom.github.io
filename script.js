@@ -24,9 +24,12 @@ function showProjects(){
   divProjects.appendChild(a2);
 
   var a3 = document.createElement('a');
-  a3.innerHTML = "In progress..";
+  a3.innerHTML = "Plantify";
+  a3.setAttribute('href','Plantify/index.html');
   a3.setAttribute('class','dropdownA');
   divProjects.appendChild(a3);
+
+
 
 }
 //function that creates contact image element and contact info when clicked.
