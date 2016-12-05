@@ -44,6 +44,7 @@ h1,h2,h3, a{
 }
 h1{
   font-size: 2rem;
+  margin-right: 1rem;
 }
 h2{
   font-size: 3rem;
@@ -55,11 +56,12 @@ h2{
   margin-right:2rem;
 }
 /*0001*/
-h3.aside2{margin-top: 3rem;}
+h3.aside2{}
 p.aside2{margin-top: -1rem;}
 h2.aside{
   color:#00D66E;
-  margin-left: 2rem;
+  margin: 2rem;
+
 }
 /*0010*/
 .contacth2{
@@ -235,7 +237,7 @@ aside{
   float:left;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  min-width: 20rem;
+  /*min-width: 20rem;*/
 
 }
 /*0010 återanvänds*/
@@ -243,6 +245,8 @@ aside{
 background: white;
 float:right;
 margin-right: 0;
+font-size: 1em;
+margin-left: 1rem;
 }
 
 .asidecontact{
@@ -358,7 +362,7 @@ input[type="submit"]{
   border-radius: 1rem;
 }
 /* Animations */
-@keyframes fadein {
+@keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -386,8 +390,83 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
   padding:1rem;
 }
 
-/*
-@media screen and (min width:30em){
-  kod
+
+@media (max-width:1150px){
+  p{
+    font-size: 80%;
+    }
+  h2{font-size:1.5rem;}
+  aside,.asideright{
+    height:16rem;
+    float:left;
+  }
 }
-*/
+@media screen and(max-width:1045px){
+  .heading2,.green{
+    margin-top: 6rem;
+    font-size: 4rem
+   }
+}
+@media screen and(max-width:992px){
+    center{
+      display:flex;
+      flex-direction: column;
+    }
+    .heading2,.green{
+      margin-top: 3rem;
+    }
+    aside{
+      width:100%;
+    }
+    .asideright{margin:0;}
+}
+@media screen and (max-width:800px) {
+  center{margin:1rem;}
+  .heading2{margin-top: 6rem;}
+
+}
+@media screen and (max-width:600px){
+  .heading2,.green{
+    font-size: 2.5rem;
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+}
+@media screen and (max-width:860px){
+  nav{
+    margin:0;
+    width:80%;
+  }
+  .headline{display:none;}
+  .logo{margin:0;}
+  header{justify-content: space-around;}
+
+  }
+
+@media screen and(max-width:680px){
+  center{
+    margin-right:0;
+    margin-left:0;
+  }
+  aside{
+    height:auto;
+  }
+  .aside{height: auto;}
+  .banner{margin-top:1rem;}
+}
+@media screen and (max-width:480px){
+  nav{
+    
+    width:100%;
+    color: #280003;
+    position: fixed;
+
+    margin:1rem;
+
+    left:0;
+  }
+  footer{
+    display: none;
+
+  }
+}
