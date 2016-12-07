@@ -9,16 +9,21 @@ In every css comment spcificitet is specified!
 
 /* general */
 /*0001*/
-body{
+html,body{
   margin:0;
   padding:0;
-  background: url('images/Bakgrund@2x.jpg');
-  background-size: 100%;
+  width:100vw;
+  height:10vw;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
+  background: url('images/Bakgrund@2x.jpg');
+  background-size: 100%;
+}
 
-  width: 100%;
+.background{
+
 }
 /*0001*/
 main{
@@ -28,10 +33,13 @@ main{
   background: rgba(80, 92, 90, 0.5);
   margin:0;
   display: block;
-  width:  100%;
+  width: 100vw;
   height: 2600px;
   text-align: center;
   top:0;
+  right:0;
+  left:0;
+  bottom:0;
   position:absolute;
 
 }
@@ -448,7 +456,7 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
     margin:0;
     width:80%;
   }
-
+  .heading2{margin-top: 2rem;}
   .headline{display:none;}
 
   .logo{margin:0;}
@@ -484,21 +492,19 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
 
 @media screen and (max-width:480px){
   .heading2,.green{font-size: 2rem;}
-  header{
-
+  .center{
+    min-width: 0;
   }
-  p{
-    font-size: 70%;
 
-    }
-  h2,.aside{font-size:1.1rem;
-      margin-left: 0.5rem;
+  /*h2,.aside{
+    font-size:1.1rem;
+    margin-left: 0.5rem;
 
-    }
+    }*/
   nav{
     width:100%;
     color: #280003;
-    position: fixed;
+
     margin:1rem;
     left:0;
   }
@@ -506,7 +512,7 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
     display: none;
   }
 
-  aside{
+  aside,.asideright{
 
     height:15rem;
   }
