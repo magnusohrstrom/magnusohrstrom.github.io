@@ -294,10 +294,10 @@ table{
 }
 thead{
 
-    height: 1rem;
+    width:100%;
     display:flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 tbody{
@@ -538,13 +538,21 @@ td{
 
 table{
 
+
+  min-width: 50rem;
   }
 
   aside{
     height:10rem;
   }
-  .aside{height: auto;}
-  .banner{margin-top:1rem;}
+  .aside{
+    height: auto;
+  }
+  .banner{
+    margin-top:1rem;}
+  .heading{
+    position: relative;
+  }
 
 }
 
