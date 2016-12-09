@@ -98,9 +98,14 @@ a{
 p,li{
   font-size: 1.2rem;
   color: white;
-  margin:0.5rem;
+  margin:1rem;
   font-weight: 600;
-
+}
+p.about{
+  color:white;
+  margin:0;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 /*0010*/
 .headline{
@@ -192,6 +197,7 @@ nav{
 
 }
 section{
+
   display: flex;
   justify-content: center;
   align-items: space-between;
@@ -233,8 +239,13 @@ article{
 /*0010*/
 .about{
   display: block;
-  height:20rem;
-  width: 30rem;
+  height:auto;
+  width: 100%;
+  background: #00D66E;
+  margin:0;
+  color:white;
+  tex
+
 }
 /*0001 återanvänds*/
 aside{
@@ -266,21 +277,60 @@ margin-left: 1rem;
   float:right;
   margin-top: 1rem;
 }
-
+/*---------------------------TABLE--------------------*/
 /*0001*/
 table{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   border-collapse: collapse;
-  height:100%;
+
+  top:0;
+  bottom:0;
 }
+.tablesection{
+
+}
+thead{
+
+    height: 1rem;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+tbody{
+  flex-direction: column;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+}
+
+th,.th2{
+  display: flex;
+  width:100%;
+  height: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+tr{
+
+  display:flex;
+  justify-content: center;
+  align-items: space-between;
+  }
+
 td{
   color:white;
   background:#5A7D7C;
-  padding:1rem;
+  padding:0.8rem;
   font-weight: 600;
   font-size: 1.2rem;
+  flex:1;
+
 }
 
 /*0011*/
@@ -290,7 +340,7 @@ th:nth-child(3){background:#00D66E;}
 /*0020*/
 .th2:nth-child(1){background: #EF2F59;}
 .th2:nth-child(2){background: #2470A6;}
-.th2:nth-child(3){background: #;}
+.th2:nth-child(3){background: #00D66E;}
 
 /*0011*/
 td:nth-child(1){background: #A1A3A3;}
@@ -306,7 +356,7 @@ input[type="checkbox"]{
 .check{
 
   display: flex;
-  justify-content: center;
+
 }
 
 /*images--------------------------------------------------------------*/
@@ -397,9 +447,10 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
 .aboutdiv{
   text-align: left;
   height:auto;
-  width: auto;
-  margin-top:1rem;
+  width: 60%;
+
   padding:1rem;
+
 }
 
 
@@ -408,10 +459,17 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
     height:10rem;
     width:100%;}
   p{
-    font-size: 80%;
+    font-size: 1rem;
     }
-  h2{font-size:1.5rem;}
+  h2{font-size:1.6rem;}
+
+
+td{
+  font-size:1rem;
+  padding:0.3;
+}
   aside,.asideright{
+
     height:16rem;
     float:left;
   }
@@ -428,30 +486,37 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
       flex-direction: column;
       justify-content: center;
       align-items: space-between;
+      margin-left: 2rem;
+      margin-right: 2rem;
       margin-top: 6rem;
 
+
     }
+
     .heading2,.green{
       font-size: 3rem;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
-    aside{
 
-      width:100%;
-      margin:0;
-      height:10rem;
-
-    }
-    .asideright{
+    aside, .asideright{
       width:100%;
       margin:0;
       margin-top: 1rem;
       height:10rem;
       }
     .banner{margin-top:1rem;}
+    table{
+      display: block;
+    }
+
 }
 
 @media screen and (max-width:860px){
+
+  .center{
+    margin-right:1rem;
+    margin-left: 1rem;
+  }
   nav{
     margin:0;
     width:80%;
@@ -464,34 +529,44 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
   header{justify-content: space-around;}
 }
 
-@media screen and (max-width:680px){
+@media screen and (max-width:690px){
   .center{
     margin-right:0;
     margin-left:0;
-    margin-top:4rem;
+
   }
+
+table{
+
+  }
+
   aside{
     height:10rem;
   }
   .aside{height: auto;}
   .banner{margin-top:1rem;}
+
 }
 
 @media screen and (max-width:600px){
   .heading2,.green{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-left:1rem;
     margin-right:1rem;
   }
-  aside, .asideright{
-
+  .aboutdiv{
+    width: 90%;
   }
+
 }
 
 
 
 @media screen and (max-width:480px){
-  .heading2,.green{font-size: 2rem;}
+  .heading2,.green{
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
   .center{
     min-width: 0;
   }
@@ -516,5 +591,6 @@ aside:hover,section:hover{  box-shadow:0px 4px 8px 5px black;
 
     height:15rem;
   }
-
+  .heading{
+    font-size: 2rem;
 }
